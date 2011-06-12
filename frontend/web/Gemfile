@@ -6,6 +6,8 @@ gem 'rails',     :git => 'git://github.com/rails/rails.git'
 # Asset template engines
 gem 'sass-rails', "~> 3.1.0.rc"
 gem 'coffee-script'
+gem 'haml', :git => 'git://github.com/nex3/haml'
+gem 'haml-rails'
 gem 'uglifier'
 
 gem 'jquery-rails'
@@ -26,4 +28,6 @@ gem 'bson_ext'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec'
+  gem 'rspec-rails'
 end

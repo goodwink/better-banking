@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/nex3/haml
+  revision: ffb73065aa2843b73b4a85766085cc93b9c8fd85
+  specs:
+    haml (3.2.0.alpha.0)
+
+GIT
   remote: git://github.com/rails/rails.git
   revision: e591d14b9c4a1220dc55c93c01a81ad6219c1f2f
   specs:
@@ -63,9 +69,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.1.1)
+    diff-lcs (1.1.2)
     erubis (2.7.0)
     execjs (1.1.2)
       multi_json (~> 1.0)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hike (1.0.0)
     i18n (0.6.0)
     jquery-rails (1.0.9)
@@ -95,6 +107,19 @@ GEM
       rack (>= 1.0)
     rake (0.9.2)
     rdoc (3.6.1)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.3)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
+    rspec-rails (2.6.1)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      railties (~> 3.0)
+      rspec (~> 2.6.0)
     sass (3.1.2)
     sass-rails (3.1.0.rc.2)
       actionpack (~> 3.1.0.rc1)
@@ -123,9 +148,13 @@ DEPENDENCIES
   bson_ext
   bunny
   coffee-script
+  haml!
+  haml-rails
   jquery-rails
   mongoid
   rails!
+  rspec
+  rspec-rails
   sass-rails (~> 3.1.0.rc)
   turn
   uglifier

@@ -43,5 +43,11 @@ module Web
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
+    config.generators do |g|
+      g.template_engine     :haml
+      g.test_framework      :rspec, :fixture => true, :views => false
+      g.orm                 :mongoid
+    end
   end
 end
