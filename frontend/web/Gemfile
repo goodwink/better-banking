@@ -16,6 +16,8 @@ gem 'bunny'
 gem 'mongoid'
 gem 'bson_ext'
 
+gem 'devise', :git => 'http://github.com/plataformatec/devise.git'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -1,0 +1,30 @@
+%p#notice= notice
+
+%p
+  %b Cif:
+  = @customer.cif
+%p
+  %b Name:
+  = @customer.name
+%p
+  %b Business?:
+  = @customer.business?
+%p
+  %b Address1:
+  = @customer.address1
+%p
+  %b Address2:
+  = @customer.address2
+%p
+  %b City:
+  = @customer.city
+%p
+  %b State:
+  = @customer.state
+%p
+  %b Zip:
+  = @customer.zip
+
+= link_to 'Edit', edit_customer_path(@customer)
+\|
+= link_to 'Back', customers_path
