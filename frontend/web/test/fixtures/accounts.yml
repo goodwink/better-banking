@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id: MyString
+  product_id: 
+  institution_id: MyString
+  nickname: MyString
+  description: MyString
+  display_balance_id: MyString
+
+two:
+  id: MyString
+  product_id: 
+  institution_id: MyString
+  nickname: MyString
+  description: MyString
+  display_balance_id: MyString

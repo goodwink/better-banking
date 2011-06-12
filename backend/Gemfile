@@ -1,0 +1,8 @@
+source "http://rubygems.org"
+
+gem "em-mongo"
+gem "bson_ext"
+gem "amqp"
+gem "active_support"
+gem "i18n"
+

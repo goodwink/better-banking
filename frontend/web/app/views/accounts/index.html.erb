@@ -1,0 +1,33 @@
+<h1>Listing accounts</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Product</th>
+    <th>Institution</th>
+    <th>Nickname</th>
+    <th>Description</th>
+    <th>Display balance</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @accounts.each do |account| %>
+  <tr>
+    <td><%= account.id %></td>
+    <td><%= account.product_id %></td>
+    <td><%= account.institution_id %></td>
+    <td><%= account.nickname %></td>
+    <td><%= account.description %></td>
+    <td><%= account.display_balance_id %></td>
+    <td><%= link_to 'Show', account %></td>
+    <td><%= link_to 'Edit', edit_account_path(account) %></td>
+    <td><%= link_to 'Destroy', account, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account', new_account_path %>
