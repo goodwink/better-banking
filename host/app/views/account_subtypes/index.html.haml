@@ -1,0 +1,17 @@
+%h1 Listing account_subtypes
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @account_subtypes.each do |account_subtype|
+    %tr
+      %td= link_to 'Show', account_subtype
+      %td= link_to 'Edit', edit_account_subtype_path(account_subtype)
+      %td= link_to 'Destroy', account_subtype, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Account subtype', new_account_subtype_path

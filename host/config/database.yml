@@ -1,0 +1,40 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+development:
+    adapter: postgresql
+    host: localhost
+    port: 5432
+    username: host_rails
+    password: host_rails
+    database: bb_development
+    schema_search_path: core
+    encoding: utf8
+    template: template0
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: host_rails
+  password: host_rails
+  database: bb_test
+  schema_search_path: core
+  encoding: utf8
+  template: template0
+
+production:
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: host_rails
+  password: host_rails
+  database: bb_production
+  schema_search_path: core
+  encoding: utf8
+  template: template0

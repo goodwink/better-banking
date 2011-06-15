@@ -1,0 +1,10 @@
+= form_for @account_subtype do |f|
+  -if @account_subtype.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@account_subtype.errors.count, "error")} prohibited this account_subtype from being saved:"
+      %ul
+        - @account_subtype.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

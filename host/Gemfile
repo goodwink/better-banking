@@ -1,0 +1,32 @@
+source 'http://rubygems.org'
+
+gem 'rails',     :git => 'git://github.com/rails/rails.git'
+
+gem 'pg'
+
+# Asset template engines
+gem 'sass-rails', "~> 3.1.0.rc"
+gem 'coffee-script'
+gem 'haml', :git => 'git://github.com/nex3/haml'
+gem 'haml-rails'
+gem 'uglifier'
+
+gem 'jquery-rails'
+
+gem 'devise', :git => 'http://github.com/plataformatec/devise.git'
+
+# Use unicorn as the web server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test do
+  # Pretty printed test output
+  gem 'turn', :require => false
+  gem 'rspec'
+  gem 'rspec-rails'
+end

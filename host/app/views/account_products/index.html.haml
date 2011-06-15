@@ -1,0 +1,17 @@
+%h1 Listing account_products
+
+%table
+  %tr
+    %th
+    %th
+    %th
+
+  - @account_products.each do |account_product|
+    %tr
+      %td= link_to 'Show', account_product
+      %td= link_to 'Edit', edit_account_product_path(account_product)
+      %td= link_to 'Destroy', account_product, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Account product', new_account_product_path
